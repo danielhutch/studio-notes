@@ -17,3 +17,4 @@
 |⌃⌥ b | Set nudge value to Beat
 |⌃⌥ d | Set nudge value to Division
 |⌘ d | Duplicate track with same settings
+|⌘ 2 | Open Mixer

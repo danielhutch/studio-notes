@@ -16,7 +16,7 @@ Port          | Instrument    | Notes
 9             | 909           |
 10            | 808           | Channel 10
 11            | 707           | 
-12            |               |
+12            | DX100         |
 13            |               |
 14            |               |
 15            |               |

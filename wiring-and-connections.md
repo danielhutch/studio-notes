@@ -36,3 +36,12 @@ Port          | Instrument    | Notes
 3 DIN         | TR-808        | Kenton rear switch up
 4 DIN         | 
 5 DIN         | 
+
+
+##Logic external effects
+###Send effects
+1. Instrument on track, Send 100% to BUS
+1. Use I/O on AUX track, out 3 in 5&6
+1. Patch in effect 100% wet
+1. Create print track, input 5&6 (latency is negligible)
+1. Record print track then disable I/O on AUX track

@@ -19,3 +19,4 @@
 |⌘ d | Duplicate track with same settings
 |⌘ 2 | Open Mixer
 |⌘ U | Set cycle range from selection
+|⌃m|Mute

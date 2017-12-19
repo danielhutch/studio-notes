@@ -9,6 +9,7 @@
 |⌘ ◀|Zoom out track length
 |⌘ ▶|Zoom in track length
 |z|Zoom in/out
+|;|Nudge clip to playhead
 |⌥ ◀ |Nudge clip left
 |⌥ ▶ |Nudge clip right
 |⌥+Shift ▲ |Nudge clip octave

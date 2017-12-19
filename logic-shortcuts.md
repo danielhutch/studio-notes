@@ -1,6 +1,6 @@
 |Key |Command |Note
 |:---|:---|:---
-|,|	Fack a bar
+|,|	Back a bar
 |.|Forward a bar
 |Shift+'|Back 8 bars
 |Shift+.|Forward 8 bars

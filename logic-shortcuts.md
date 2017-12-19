@@ -2,6 +2,8 @@
 |:---|:---|:---
 |,|	back a bar
 |.|forward a bar
+|Shift+'| back 8 bars
+|Shift+.| forward 8 bars
 |⌘ ▲|Zoom out track height
 |⌘ ▼|Zoom in track height
 |⌘ ◀|Zoom out track length

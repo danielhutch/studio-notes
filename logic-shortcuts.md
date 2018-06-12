@@ -18,3 +18,7 @@
 |⌃⌥ d | Set nudge value to Division
 |⌘ d | Duplicate track with same settings
 |⌘ 2 | Open Mixer
+|⌘ [ | Crop track left
+|⌘ [ | Crop track right
+|⌘ U | Loop selected region
+|;|Move clip to playhead

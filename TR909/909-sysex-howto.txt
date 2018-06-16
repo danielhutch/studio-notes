@@ -1,0 +1,94 @@
+Manual Backup & Restore of TR909 Patterns Via Sysex
+===================================================
+
+The TR909 has a sysex implementation that allows
+the whole memory to be dumped or reloaded, but all
+transfers must be initiated from the PC, so most
+people don't even know this can be done...
+
+Make sure the 909 is in track mode, and stopped.
+
+Connect 909 MIDI out to PC MIDI in, PC MIDI out to
+909 MIDI in.
+
+I use MIDI-Ox to backup and restore patterns, but
+other MIDI utilities may do just as well.
+
+MIDI-Ox will not allow the sysex request commands to
+be sent manually while also waiting to capture the
+dump sent in response by the 909, so you need to use
+two instances of MIDI-Ox to backup the 909.
+One will be used to send the requests, the other will
+receive the data.
+The first instance run should be used to send the
+requests, as the second instance may not be able to
+open the MIDI output port.
+
+In the first instance of MIDI-Ox, open the Sysex
+window.
+Go to the 'Sysex, Configure...' menu option and, in the
+configuration dialogue, make sure you have
+'Delay after F7' set to at least 150 ms.
+
+In the second instance of MIDI-Ox, open the Sysex
+window and use the 'Sysex, Receive Manual Dump...'
+menu option.
+A 'SysEx Receive' dialogue should appear showing
+zero bytes received so far.
+
+Copy and paste the following into the Sysex Command
+window in the first instance of MIDI-Ox:
+
+f0 41 51 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+f0 41 53 f7
+
+Then use the 'Command Window, Send Sysex' menu option.
+This instance of MIDI-Ox will send 16 messages to the 909.
+There should be a 150ms pause between each message.
+In response to each, the 909 will send one block of its
+memory contents back.
+All 16 blocks sent by the 909 should be received by the
+second instance of MIDI-Ox.
+When complete, the 'SysEx Receive' dialogue should report
+8368 bytes have been received.
+
+To save the dump, click 'Done' to close the receive dialogue.
+The received hex data should appear in the Display Window.
+Use the 'Display Window, Save As...' menu option to save the
+dump to disk as a .syx file.
+
+
+RESTORING THE DATA
+
+Before the saved sysex data can be resent to the 909, you
+need to manually send a 'Data load from host' request:
+
+F0 41 50 F7
+
+You can copy this string into the MIDI-Ox sysex Command Window.
+After sending it to the 909, you can then use the
+'File, Send Sysex File...' menu option to replay the dumped
+data to the 909.
+As long as you have the F7 delay still set correctly, the 909
+should respond to each block with the message 'F0 41 53 F7'.
+
+
+That's it !
+
+Cheers,
+Colin f
+

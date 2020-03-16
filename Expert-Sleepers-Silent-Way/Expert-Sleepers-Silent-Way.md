@@ -68,7 +68,7 @@ This descripes how to use the ES-40 and an ESX-GT with Ableton Live for trigger 
 
 Create a new project with one Ableton track for the ‘SW ES4 Controller’ plugin.
 
-In the SW ES4 Controller, in the ‘MIDI/CV’ section change ‘Channel’ to ‘OFF’, in ‘GATES’ turn ‘3 Chan’ to 1 and ‘3 Base’ to 60.
+In the SW ES4 Controller, in the ‘MIDI/CV’ section change ‘Channel’ to ‘OFF’, in ‘GATES’ turn ‘2 Chan’ to 1 and ‘3 Base’ to 60.
 
 C3 corresponds to port 1, C3# corresponds to port 2 and D3 corresponds to port 3
 
